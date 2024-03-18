@@ -1,0 +1,31 @@
+h2.header {
+    border: 5px solid black;
+}
+
+p.para1 {
+    border: 2px solid blueviolet;
+}
+
+p.para2 {
+    border: 2px solid green;
+}
+
+hr.hr {
+    border: 5px solid red;
+}
+
+li.list {
+    border: 2px solid green;
+}
+
+h3.header3 {
+    border: 2px solid green;
+}
+
+img.image {
+    border: 3px solid yellow;
+}
+
+video.video {
+    border: 3px solid crimson;
+}
