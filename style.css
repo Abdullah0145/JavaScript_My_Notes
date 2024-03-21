@@ -28,4 +28,12 @@ img.image {
 
 video.video {
     border: 3px solid crimson;
+}   
+
+.achor_tag {
+    border: 2px solid coral ;
+}
+
+div.div {
+    border: 2px solid green;
 }
