@@ -826,14 +826,14 @@
     <p class="para2">Human beings make decisions all the time. For example, every morning, we make a decision between eating or not eating before starting our daily chores. Conditional statements allow us to represent such decision-making in JavaScript, from the choice that must be made.</p>
 
     <p class="para1"><b style="color: blueviolet;">Ques 46:</b> <b style="color: blueviolet;">What is Conditionals in JavaSc8ipt?</b></p>
-    <p class="para2"><b style="color: green;">Ans:</b> JavaSc8ipt is a programming language that is commonly used to create interactive and dynamic elements on wwbsites. One of the key features of JavaScript is the ability to use conditional statements to control the flow of a program.</p>
+    <p class="para2"><b style="color: green;">Ans:</b> JavaScript is a programming language that is commonly used to create interactive and dynamic elements on wwbsites. One of the key features of JavaScript is the ability to use conditional statements to control the flow of a program.</p>
     <p class="para2">Conditions work on boolean values, true or false. It is true if it meets the requirement, false otherwise. That is expressions (conditions) are evaluated to be either true or false.</p>
 
     <p class="para1"><b style="color: blueviolet;">Ques 47:</b><b style="color: blueviolet;">What are the ways of writing conditionals in Javascript?</b></p>
     <p class="para2"><b style="color: green;">Ans:</b> <b>There are three ways of writing conditionals in Javascript.</b></p>
     <ol>
       <li class="list">If/else Statement</li>
-      <li class="list">SWitch Statement</li>
+      <li class="list">Switch Statement</li>
       <li class="list">Ternary Operator</li>
     </ol>
 
@@ -904,6 +904,83 @@
     <p class="para2">From the previous lecture, we know the syntax of the if statement, and we will write the code considering the same syntax.</p>
     <p class="para2"><b>// Input</b></p>
     <p class="para2"><b>var num = 10;</b></p>
+    <p><b>// Condition 01: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>if (num % 2 == 0) { </b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b> }</b></p>
+    <p>This code block checks if the variable "num" is an even number using an if statement. The if statement checks the condition num % 2 == 0. </p>
+    <p>The modulus operator % is used to find the remainder of dividing the variable "num" by 2.</p>
+    <p>If the remainder is 0, it means that the number is completely divisible by 2 and it is an even number.</p>
+    <p>If the condition is true, the code inside the if block will be executed, which is console.log("The number given is an even number");. This will output the message "The number given is an even number" to the console, confirming that the number is even.</p><p><b></b></p>
+    <p><b>// Input</b></p>
+    <p>var num = 10; // Output: The number given is an even number</p>
+    <p><b>// Condition 02: Any number that is completely divisible [remainder must be 0] by 2 then is an even number.</b></p>
+    <p><b>if (num % 2 == 0) { </b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b> } </b></p>
+    <p>If the condition is false, the code inside the if block will not be executed, and this code will not give any output.</p>
+    <p><b>// Input</b></p>
+    <p>var num = 11; // Output:</p>
+    <p><b>// Condition 03: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>if (num % 2 == 0) { </b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b> } </b></p>
+    <p>Since we are not getting any output if the condition is false. It's time to handle the second condition which is any number that is not completely divisible [ remainder must be 0 ] by 2 then it is an odd number</p>
+    <p>As we have already checked for the even number condition, now if the condition for even fails it is an odd number. We can check this through the else statement.</p>
+    <p><b>// Input</b></p>
+    <p>var num = 11; // Output: The number given is an odd number</p>
+    <p><b>// Condition 04: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>if (num % 2 == 0) {</b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b>} else {</b></p>
+    <p><b>console.log("The number given is an odd number");</b></p>
+    <p><b> } </b></p>
+    <p><b>// Input</b></p>
+    <p>var num = 10; // Output: The number given is an even number</p>
+    <p><b>// Condition 05: Any number that is completely divisible [ remainder must be 0 ] by 2 then it is an even number.</b></p>
+    <p><b>if (num % 2 == 0) {</b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b>} else {</b></p>
+    <p><b>console.log("The number given is an odd number");</b></p>
+    <p><b> } </b></p>
+    <p>Now the code is capable of checking if the given number is odd or even.</p>
+    <p>We also have our third condition which is zero is neither an odd number nor an even number. So the first condition we need to check is if the number is zero, then if the number is even, and at last, if both the condition fails it is an odd number.</p>
+    <p><b>// Input</b></p>
+    <p>var num = 10; // Output: The number given is an even number</p>
+    <p><b>// Condition 06: Zero is neither an odd number nor an even number.</b></p>
+    <p><b>if (num == 0) {</b></p>
+    <p><b>console.log("Zero is neither an odd number nor an even number");</b></p>
+    <p><b>} else if (num % 2 == 0) {</b></p>
+    <p><b>// Condition 07: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b>} else {</b></p>
+    <p><b>// Condition 08: Any number that is not completely divisible [remainder must be 0] by 2 then it is an odd number.</b></p>
+    <p><b>console.log("The number given is an odd number");</b></p>
+    <p><b> } </b></p>
+    <p><b>// Input</b></p>
+    <p>var num = 11; // Output: The number given is an odd number</p>
+    <p><b>// Condition 09: Zero is neither an odd number nor an even number.</b></p>
+    <p><b>if (num == 0) {</b></p>
+    <p><b>console.log("Zero is neither an odd number nor an even number");</b></p>
+    <p><b>} else if (num % 2 == 0) {</b></p>
+    <p><b>// Condition 10: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b>} else {</b></p>
+    <p><b>// Condition 11: Any number that is not completely divisible [remainder must be 0] by 2 then it is an odd number.</b></p>
+    <p><b>console.log("The number given is an odd number");</b></p>
+    <p><b> } </b></p>
+    <p><b>// Input</b></p>
+    <p>var num = 0; // Output: Zero is neither an odd number nor an even number</p>
+    <p><b>// Condition 12: Zero is neither an odd number nor an even number.</b></p>
+    <p><b>if (num == 0) {</b></p>
+    <p><b>console.log("Zero is neither an odd number nor an even number");</b></p>
+    <p><b>} else if (num % 2 == 0) {</b></p>
+    <p><b>/ظ Condition 13: Any number that is completely divisible [remainder must be 0] by 2 then it is an even number.</b></p>
+    <p><b>console.log("The number given is an even number");</b></p>
+    <p><b>} else {</b></p>
+    <p><b>// Condition 14: Any number that is not completely divisible [remainder must be 0] by 2 then it is an odd number.</b></p>
+    <p><b>console.log("The number given is an odd number");</b></p>
+    <p><b> } </b></p>
 
     <p class="para1"><b style="color: blueviolet;">Ques 50:</b><b style="color: blueviolet;">What are the Order of evaluation for if, else if, and else statements?</b></p>
     <p class="para2"><b style="color: green;">Ans:</b> In JavaScript, the order of evaluation for if, else if, and else statements are as follows:</p>
@@ -913,6 +990,202 @@
       <p></p>
       <li class="list">If all of the if and else if conditions are false, the program will move on to the else statement and execute the code inside its block.</li>
     </ol>
+
+    <p><b>Ques 51:</b> <b>Explain while loop in JavaScript? And Give the Example of while loop in JavaScript?</b></p>
+    <p><b>Ans:</b> Loops are used in programming to repeatedly run a block of code.A loop can be used, for instance, to repeat, a message hundred times. It's only a simple illustration; loops may be used to accomplish much more.</p>
+    <p><b>while loop</b></p>
+    <p>Syntax:</p>
+    <p><b>while (condition) {</b></p>
+    <p><b>// body of loop</b></p>
+    <p><b>}</b></p>
+    <ul>
+      <li>The parentheses has the condition that is to be evaluated by a while loop().</li>
+      <li>The while loop's code is run if the condition evaluates to true.</li>
+      <li>The condition is assessed again.</li>
+      <li> until the condition is false, this process keeps going.</li>
+      <li>The loop ends when the condition is evaluated as false.</li>
+    </ul>
+    <img src="./assets/While Loop Flowchart.png" alt="While Loop Flowchart" title="While Loop Flowchart" width="300px" height="300px"/>
+    <p><b>Example 1: To print numbers from 1 to 10 using while loop</b></p>
+    <p>let i = 1, n = 10;</p>
+    <p>while (i <= n)</p>
+    <p>{</p>
+    <p>console.log(i);</p>
+    <p>i = i + 1;</p>
+    <p>}</p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Print 1 to 10 while loop.png" alt="Print 1 to 10 while loop" title="Print 1 to 10 while loop" width="500px" height="300px"/>
+    <p><b>Example 2 : To print numbers from 10 to 1 in decreasing order.</b></p>
+    <p>let i = 1, n = 10;</p>
+    <p>while (n>=i){</p>
+    <p>console.log(n);</p>
+    <p>n=n-1;</p>
+    <p>}</p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Print 10 to 1 while loop.png" alt="Print 10 to 1 while loop" title="Print 10 to 1 while loop" width="500px" height="300px"/>
+
+    <p><b>Ques 52:</b> <b>Explain Do while loop in JavaScript? Give the Example Do while loop in JavaScript?</b></p>
+    <p><b>Ans: </b> Syntax:</p>
+    <p><b>do {</b></p>
+    <p><b>// body of loop</b></p>
+    <p><b>} while(condition)</b></p>
+    <img src="./assets/Do While Flowchart.png" alt="Do While Flowchart" title="Do While Flowchart" width="500px" height="300px"/>
+    <ul>
+      <li>The loop's body is first executed. The condition is analyzed afterwards.</li>
+      <li>The body of the loop within the do statement is repeated if the condition evaluates to true.</li>
+      <li>A second assessment of the condition is made.</li>
+      <li>The body of the loop within the do statement is repeated again if the condition evaluates to true.</li>
+      <li>Up until the condition is evaluated as false, this process keeps going. The loop then ends.</li>
+    </ul>
+    <p><b>Example 1 : Write a program to print numbers from 1 to 7 in a line using do-while loop</b></p>
+    <p>let result = '';</p>
+    <p>let i = 0;</p>
+    <p>do {</p>
+    <p>i = i + 1;</p>
+    <p>result = result + i;</p>
+    <p>} while (i < 7);</p>
+    <p>console.log(result);</p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Print 1 to 7 Do while Loop.png" alt="Print 1 to 7 Do while loop" title="Print 1 to 7 Do while loop" width="500px" height="300px"/>
+
+    <p><b>Ques 53:</b> <b>Explain For loop in JavaScript? Give the Example of For loop in JavaScript?</b></p>
+    <p><b>Ans:</b> For Loop</p>
+    <p><b>Syntax:</b></p>
+    <p>for (initial expression; condition; update expression) {</p>
+    <p>// for loop body</p>
+    <p> } </p>
+    <img src="./assets/For Loop Flowchart.png" alt="For Loop Flowchart" title="For Loop Flowchart" width="500px" height="300px"/>
+    <ul>
+      <li>InitialExpression only ever executes once while  initiaizing and declaring variables.</li>
+      <li>The condiion is assessed.</li>
+      <li>The for loop is ended if the condition is false.</li>
+      <li>The for loop's code block is performed if the condition is satisfied.</li>
+      <li>When the condition is true, the update expression changes the initial expression's value.</li>
+      <li>The condition is once more assessed. Up till the condition is false, this process keeps going.</li>
+    </ul>
+    <p><b>Example 1: Using For loop print “PW Skills” 3 times.</b></p>
+    <p>for (let i = 0; i < 3; i++)</p>
+    <p> { </p>
+    <p>let name = "PW Skills"</p>
+    <p>console.log(name);</p>
+    <p> } </p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Print PW Skills 3 times.png" alt="Print PW Skills 3 times" title="Print PW Skills 3 times" width="500"
+    height="300px"/>
+    <p><b>Example 2: Display a sequence of even numbers till 20</b></p>
+    <p>for (let i = 2; i <= 20; i+=2) {</p>
+    <p>console.log(i);</p>
+    <p>}</p>
+    <img src="./assets/Print even number till 20.png" alt="Print even number till 20" title="Print even number till 20" width="500px" height="300px"/>
+
+    <p><b>Ques 54:</b> <b>Explain Nested for loop in JavaScript? Give the Example of Nested for loop in JavaScript?</b></p>
+    <p><b>Nested for loop</b></p>
+    <p>An outer for loop and one or more inside for loops constitute a nested for loop. Control re-enters the inner for loop and initiates a fresh execution every time the outer for loop repeats</p>
+    <p>In other words, every time the outer for loop repeats, the control will enter the inner for loop.</p>
+    <p>Nested for loop often looks like this.</p>
+    <p><b>Syntax:</b></p>
+    <p><b>// Outer for loop.</b></p>
+    <p>for (initialization; test-condition; increment/decrement)</p>
+    <p> { </p>
+    <p><b>// Inner for loop.</b></p>
+    <p> for (initialization; test-condition; increment/decrement)</p>
+    <p> { </p>
+    <p>// statement of inner loop</p>
+    <p> } </p>
+    <p>// statement of outer loop</p>
+    <p> } </p>
+    <p>The execution flow is something like this:</p>
+    <img src="./assets/Nested for loop Flowchart.png" alt="Nested for loop Flowchart" title="Nested for loop Flowchart" width="500px" height="300px"/>
+    <p><b>Example 1 : Write a program to show the inner for loop values for each outer iteration in along with the outer "for" loop.</b></p>
+    <p>for(let i=1;i<=3;i++) { //outer loop</p>
+    <p>console.log("for i= " + i + " the innerloop values are")</p>
+    <p>for(let j=1;j<3;j++) {  //inner loop </p>
+    <p>console.log("j= "+j)</p>
+    <p> } </p>
+    <p> } </p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Nested for Loop Output.png" alt="Nested for Loop Output.png" title="Nested for Loop Output.png" width="500px" height="300px"/>
+
+    <p><b>Ques 55:</b> <b>Explain Break Statement in JavaScript? Give the Example of Break Statement in JavaScript?</b></p>
+    <p><b>Ans:</b> A loop such as a for, do...while, or while loop, a switch, or a label statement are all prematurely terminated by the break statement. The break statement's syntax is as follows:</p>
+    <p><b>Syntax:</b></p>
+    <p>break [label];</p>
+    <img src="./assets/Break Statement Flowchart.png" alt="Break Statement Flowchart.png" title="Break Statement Flowchart.png" width="400px" height="300px"/>
+    <p><b>Example of using break with for loop:</b></p>
+    <p>Can you guess the output of the following code ?</p>
+    <p>for (let i = 0; i < 4; i++) {</p>
+    <p>console.log(i);</p>
+    <p>if (i = = 2) {</p>
+    <p>break;</p>
+    <p> } </p>
+    <p> } </p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Break Statement Output.png" alt="Break Statement Output" title="Break Statement Output" width="500px" height="200px"/>
+    <p>Here, we use an if statement inside the loop. If the current value of i becomes 2, the if statement will execute and the break statement will terminate the loop.</p>
+    <p>That is why we only see numbers till 2 in the output.</p>
+    <p><b>Example of using break with while loop</b></p>
+    <p>We will take the same example and see if it works in while loop</p>
+    <p>let i = 0;</p>
+    <p>while (i < 4) {</p>
+    <p>console.log(i);</p>
+    <p>i++;</p>
+    <p>if (i == 3) {</p>
+    <p>break;</p>
+    <p> } </p>
+    <p> } </p>
+    <p><b>Output:</b></p>
+    <img src="./assets/break with while loop Output.png" alt="break with while loop Output" title="break with while loop Output" width="400px" height="200px"/>
+    <p>Here again, we have used an if statement to check the condition for break, the moment i becomes 3, if statement is executed leading to loop termination.</p>
+    <p>Notice and observe the difference between for and while loops for getting the same result.</p>
+
+    <p><b>Ques 56:</b> <b>Explain Continue Statement in JavaScript? Give the Example of Continue Statement in JavaScript?</b></p>
+    <p><b>Ans:</b>The current iteration of the loop is skipped when using the continue statement, and the program moves on to the subsequent iteration.</p>
+    <p><b>The syntax of the continue statement is:</b></p>
+    <p>continue [label];</p>
+    <p>label is optional and rarely used.</p>
+    <img src="./assets/Continue Statement Flowchart.png" alt="Continue Statement Flowchart" title="Continue Statement Flowchart" width="400px" height="200px"/>
+    <p><b>Example of using continue in for loop</b></p>
+    <p><b>Write a program to display only odd numbers till 20:</b></p>
+    <p>for (let i = 0; i < 20; i++) {</p>
+    <p>if (i % 2 = = = 0) {</p>
+    <p>continue;</p>
+    <p> } </p>
+    <p>console.log(i);</p>
+    <p> } </p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Continue with for loop Output.png" alt="Continue with for loop Output" title="Continue with for loop" width="300px" height="200px"/>
+    <p>Here, the for loop iterates through the values from 0 to 20.</p>
+    <p>The remainder of the division of the current value of i by 2 is returned by the i%2 expression.</p>
+    <p>The continue statement, which skips the current iteration of the loop and moves to the iterator expression i++, is executed if the remainder is zero. If not, the value of i is output to the console.</p>
+    <p><b>Example of using continue in while loop</b></p>
+    <p>We will use the same example here and implement it with while loop</p>
+    <p><b>Write a program to display only odd numbers till 20</b></p>
+    <p>let i = 0;</p>
+    <p>while (i < 20) {</p>
+    <p>i++;</p>
+    <p>if (i % 2 = = = 0) {</p>
+    <p>continue;</p>
+    <p>}</p>
+    <p>console.log(i);</p>
+    <p>}</p>
+    <p><b>Output:</b></p>
+    <img src="./assets/Continue with while loop Output.png" alt="Continue with while loop" title="Continue with while loop" width="400px" height="300px"/>
+    <p>Here, the while loop iterates through the values in this example from 0 to 20.</p>
+    <p>The remainder of the division of the current value of i by 2 is returned by the i%2 expression.</p>
+    <p>The continue statement, which skips the current iteration of the loop and moves to the iterator expression i++, is executed if the remainder is zero. If not, the value of i is output to the console.</p>
+    <p><b>We can also use a label here, to print the same result. If you are wondering how, here it is:</b></p>
+    <p>Labelex:</p>
+    <P>for (let i = 0; i < 20; i++) {</P>
+    <P>if (i % 2 = = = 0) {</P>
+    <P>continue labelex;</P>
+    <P>}</P>
+    <P>console.log(i);</P>
+    <p>}</p>
+    <p>Here, the continue statement skips the execution and takes it to labelex.</p>
+    <p>You can use a label to identify a loop and the continue statement, here, to tell a program whether to skip the loop or keep running it. Note that JavaScript has no goto statement(as in C/C++); you can only use labels with break and continue.</p>
+    <p>Labeled loops are easier to track and understand with respect to program flow in case of continue.</p>
+    <p>Output:</p>
+    <img src="./assets/Continue Output.png" alt="Continue Output" title="Continue Output" width="400px" height="300px"/>
 
     <p class="para1"><b style="color: blueviolet;">Ques 51:</b> <b style="color: blueviolet;">What are the Three (3) places to put JavaScript code? Give the Syntax, example and output?</b></p>
     <p class="para2"><b style="color: green;">Ans:</b> <b>JavaScript example easy to code, JavaScript provides Three (3) places to put the JavaScript code:</b></p>
